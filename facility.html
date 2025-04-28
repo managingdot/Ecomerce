@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Facilities - Readwell Library</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f0f0f0;
+    }
+    header {
+      background-color: #800000;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    nav {
+      background: #333;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 18px;
+    }
+    nav a:hover {
+      color: #ffcc00;
+    }
+    .container {
+      padding: 30px;
+      text-align: center;
+    }
+    .container h1 {
+      color: #800000;
+      margin-bottom: 20px;
+    }
+    .facilities-list {
+      list-style: none;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+    .facilities-list li {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .facilities-list li:hover {
+      transform: translateY(-5px);
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 40px;
+    }
+    .gallery img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+    .facility-section {
+      margin-top: 60px;
+      padding: 40px;
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .facility-section h2 {
+      color: #800000;
+      margin-bottom: 20px;
+    }
+    .facility-section p {
+      font-size: 18px;
+      color: #555;
+      line-height: 1.6;
+    }
+    footer {
+      text-align: center;
+      background: #333;
+      color: white;
+      padding: 10px;
+      font-size: 14px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Our Facilities</h1>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="facilities.html">Facilities</a>
+</nav>
+
+<div class="container">
+  <h1>Explore Our Facilities</h1>
+  <ul class="facilities-list">
+    <li>Peaceful and Clean Environment</li>
+    <li>High-Speed Wi-Fi</li>
+    <li>24/7 CCTV Camera Surveillance</li>
+    <li>Comfortable Seating</li>
+    <li>Air Conditioned Reading Halls</li>
+    <li>Power Backup</li>
+    <li>Filtered Drinking Water</li>
+    <li>Individual Study Cabins</li>
+  </ul>
+
+  <div class="gallery">
+    <img src="readwell.jpg" alt="Reading Hall 1">
+    <img src="photo.jpg" alt="Reading Hall 2">
+  </div>
+
+  <div class="facility-section">
+    <h2>Why Choose Readwell Library?</h2>
+    <p>
+      At Readwell Library, we believe a great environment enhances your learning and concentration. Our facilities are designed to provide maximum comfort, security, and convenience for all students and readers. Whether you're preparing for exams, working on research, or just enjoying a good book, our amenities ensure a perfect atmosphere for your success.
+    </p>
+  </div>
+</div>
+
+<footer>
+  &copy; 2025 Readwell Library. All rights reserved.
+</footer>
+
+</body>
+</html>
