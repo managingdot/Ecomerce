@@ -1,0 +1,245 @@
+/* Global Fixes */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw; /* Fixed from 100vh */
+    background-color: #f0f5f5;
+    padding-top: 1px; /* Space for fixed header */
+}
+
+/* Fixed Header */
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f0f5f5;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.07); /* Fixed color syntax */
+    border-radius: 1pc;
+    position: fixed;
+    width: 100vw;
+    height: 115px; /* explicitly define height */
+    font-family: 'Times New Roman', Times, serif;
+    z-index: 999;
+    border-radius: 1pc;
+}
+/* Navbar styles */
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 600;
+    color: #040608;
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a:active {
+    color: #0bf9dd;
+}
+
+/* Logo image */
+#img {
+    height: 100px;
+    width: 100px;
+    border-radius: 1pc;
+    padding: 5px;
+}
+
+/* Search input */
+#search {
+    padding: 20px 150px;
+    background: #e6eafb;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.07);
+    border-radius: 1pc;
+    margin-left: 20px;
+}
+
+
+
+/* Second Navbar */
+#header2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background: #2b2c39;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.07);
+    border-radius: 1pc;
+    width: 97.5vw;
+    height: 90px;
+    position: relative;
+    top:0 ; /* no need to offset since body has padding now */
+    margin-top: 115px;
+}
+.imgmen{
+        height: 50px; /* Adjust as needed */
+        width: auto;  /* Maintain aspect ratio */
+        margin-right: 8px;
+        vertical-align: middle;
+    
+    
+}
+#gender {
+    display: flex;
+    font-weight: bold;
+    color: #fcfdfe;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    font-size: 20px;
+    margin-left: 16%;
+}
+#gender li a{
+    text-decoration: none;
+    color: white;
+}
+
+/* Gender nav styles */
+#men, #women, #brands {
+    padding: 10px 100px;
+    text-align: center;
+    border-radius: 1pc;
+    margin-right: 90px;
+    color: #fff;
+    /* text-wrap: nowrap; */
+}
+
+#women {
+    background-color: rgb(235, 69, 97);
+    list-style: none;
+    position: relative; /* This is key */
+    overflow: visible;  /* Allow child to overflow */
+}
+#men {
+    background-color: #1dabb3;
+
+
+    
+    position: relative; /* This is key */
+    overflow: visible;  /* Allow child to overflow */
+}
+/* .men-active {
+    background-color: #031d4d !important;
+    color: black !important;
+    border: 2px solid #333;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.women-active {
+    background-color: #d6096f !important;
+    color: black !important;
+    border: 2px solid #333;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+} */
+
+
+
+#men img.imgmen {
+    position: absolute;
+    top: -36px;   /* Move up */
+    left: 10px;   /* Adjust as needed */
+    height: 80px; /* Bigger image */
+    width: auto;
+    border-radius: 8px;
+}
+#women img{position: absolute;
+    top: -33px;   /* Move up */
+    left: 10px;   /* Adjust as needed */
+    height: 80px; /* Bigger image */
+    width: auto;
+    border-radius: 8px;
+
+}
+
+
+#brands {
+    background-color: rgb(158, 93, 228);
+    
+}
+
+/* Shop by Brands section */
+#header3 {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    padding: 10px 20px;
+    background: #2b2c39;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.07);
+    border-radius: 1pc;
+    width: 97.5vw;
+    height: 90vh;
+    position: relative;
+    margin-top: 1px;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 50px;
+    background: #383947;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.07);
+    border-radius: 1pc;
+    width: 90.5vw;
+    height:30vh;
+    position: absolute;
+    /* margin-top: 1px; */
+    /* justify-content: center; */
+    margin: 0px;
+    margin-bottom: 400px;
+    
+}
+.items{
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    gap: 0px 50px;
+
+    align-items: center;
+    justify-content: center;
+   
+    
+}
+
+   
+
+
+
+.ilk{
+    border-radius: 8px;
+    height: 170px;
+    background-color: #1dabb3;
+    width: 150px;
+    
+}
+.wilk{
+    border-radius: 8px;
+    height: 170px;
+    background-color: #ed475d;
+    width: 150px;
+    
+}
+
+
+.snitch{
+    
+    width: 90.5vw;
+    height:200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+margin-top: 400px
+
+}
